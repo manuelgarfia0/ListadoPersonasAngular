@@ -1,6 +1,8 @@
-import { Persona } from "../entities/persona";
+import { Persona } from "../entities/Persona";
 
 
 export class PersonaUseCase implements IPersonaUseCase{
     async getListaPersonas(): Promise<Persona[]> {
+        return ;
+    }
 }
