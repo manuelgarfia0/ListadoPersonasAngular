@@ -1,4 +1,3 @@
-
 export class Persona {
   private _id: number;
   private _nombre: string;
@@ -62,7 +61,7 @@ export class Persona {
   public set idDepartamento(value: number) {
     this._idDepartamento = value;
   }
-  
+
   constructor(
     id?: number,
     nombre?: string,
@@ -82,5 +81,5 @@ export class Persona {
     this._imagen = imagen ?? "";
     this._idDepartamento = idDepartamento ?? 0;
   }
-  
+
 }

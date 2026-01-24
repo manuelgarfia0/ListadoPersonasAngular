@@ -1,5 +1,5 @@
 import { Persona } from "../entities/Persona";
 
-export interface IPersonasUseCase {
+export interface IPersonaUseCase {
     getListaPersonas(): Promise<Persona[]>;
 }
