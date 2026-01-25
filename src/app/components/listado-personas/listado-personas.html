@@ -1,7 +1,11 @@
-<mat-list>
-  <mat-list-item>Persona</mat-list-item>
-  <mat-divider></mat-divider>
-  <mat-list-item>Persona 2</mat-list-item>
-  <mat-divider></mat-divider>
-  <mat-list-item>Persona 3</mat-list-item>
-</mat-list>
+<div class="container">
+    <mat-divider></mat-divider>
+    <mat-list>
+        <ng-container *ngFor="let persona of personasList; let last = last">
+            <mat-list-item>
+                {{ persona.nombre }} {{ persona.apellido }}
+            </mat-list-item>
+            <mat-divider *ngIf="!last"></mat-divider>
+        </ng-container>
+    </mat-list>
+</div>
